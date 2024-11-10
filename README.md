@@ -3,7 +3,6 @@
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/download-python-yellow"></a>
 <a href="https://opencv.org/" target="_blank"><img src="https://img.shields.io/badge/install-opencv-blue"></a>
 <a href="https://code.visualstudio.com/" target="_blank"><img src="https://img.shields.io/badge/download-visualstudio-0066CC"></a>
-
 </p>
 <p align="center">
 <a href="https://twitter.com/12dtan" target="_blank"><img src="https://img.shields.io/twitter/follow/12dtan.svg?style=social&label=Follow"></a>
