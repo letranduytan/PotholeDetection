@@ -55,11 +55,6 @@ Các đường viền (biên) thường được xác định ở các vùng mà
 #### 6. Phép biến đổi Watershed
 - **Watershed** là một phương pháp phân đoạn dựa trên sự phân tách địa hình, giúp xác định các đối tượng dính liền nhau.
 
-### Ý nghĩa của phát hiện đường viền
-
-Phát hiện đường viền giúp trích xuất các đặc trưng quan trọng của đối tượng trong ảnh và có vai trò quan trọng trong các bài toán về nhận dạng và phân loại. Đối với một số bài toán, việc xác định được đường viền chính xác có thể là yếu tố quyết định đến độ chính xác và hiệu quả của toàn bộ hệ thống xử lý ảnh hoặc thị giác máy tính.
-
-
 ## III. Bộ lọc Canny
 Bộ lọc Canny đóng vai trò là một phương pháp phát hiện biên để xác định các đường viền của các đối tượng trong ảnh. Canny là một trong các phương pháp phát hiện biên phổ biến và mạnh mẽ, giúp loại bỏ các chi tiết không quan trọng và làm nổi bật các biên rõ ràng
 ### Nguyên lý làm việc của bộ lọc Canny
