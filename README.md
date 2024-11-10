@@ -1,4 +1,4 @@
-# Pothole Detection using Python
+# Pothole Detection using Python (Non-AI)
 <a href="https://www.facebook.com/duytan.hh">Facebook</a>
 <a href="https://t.me/duytan2003">Telegram</a>
 
