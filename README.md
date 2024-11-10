@@ -228,7 +228,7 @@ plt.show()
 ## V. Tài nguyên 
 ### Thư viện OpenCV
 
-[OpenCV](https://opencv.org/).
+[OpenCV](https://opencv.org/) :  sử dụng để thực hiện một loạt các thao tác xử lý ảnh
 
 Install OpenCV sử dụng terminal (hoặc command prompt): 
 ```bash
