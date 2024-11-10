@@ -1,12 +1,23 @@
 # Pothole Detection using Python (Non-AI)
-<a href="https://www.facebook.com/duytan.hh">Facebook</a>
-<a href="https://t.me/duytan2003">Telegram</a>
+<p align="center">
+<a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/download-python-yellow"></a>
+<a href="https://opencv.org/" target="_blank"><img src="https://img.shields.io/badge/install-opencv-blue"></a>
+<a href="https://code.visualstudio.com/" target="_blank"><img src="https://img.shields.io/badge/download-visualstudio-0066CC"></a>
+
+</p>
+<p align="center">
+<a href="https://twitter.com/12dtan" target="_blank"><img src="https://img.shields.io/twitter/follow/12dtan.svg?style=social&label=Follow"></a>
+<a href="https://fb.com/12dtan" target="_blank"><img src="https://img.shields.io/badge/Facebook%20-%20%230866FF"></a>
+<a href="https://t.me/duytan2003" target="_blank"><img src="https://img.shields.io/badge/Telegram%20-%20%2333CCFF"></a>
+<a href="https://www.linkedin.com/in/l%C3%AA-tr%E1%BA%A7n-duy-t%C3%A2n-81112a23a/" target="_blank"><img src="https://img.shields.io/badge/Linkin%20-%20%2300CCFF"></a>
+<a href="https://instagram/duytan.hh" target="_blank"><img src="https://img.shields.io/badge/Instagram%20-%20%23FF9900"></a>
+</p>
 
 ## Phát hiện ổ gà bằng xử lí hình ảnh 
 Mô tả: Sử dụng thuật toán phát hiện đường viền (Edge Detection) và bộ lọc Canny để nhận dạng ổ gà và đưa ra cảnh báo cho tài xế
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Yyld0HExgEaToDMddVvvbw.png" alt="Phát hiện ổ gà">
-</p>
+
 
 ## I. Sơ đồ khối
 ```mermaid
