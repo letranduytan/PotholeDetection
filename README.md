@@ -1,4 +1,4 @@
-# Pothole Detection using Python (Non-AI)
+# Pothole Detection using OpenCV-Python (Non-AI)
 <p align="center">
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/download-python-yellow"></a>
 <a href="https://opencv.org/" target="_blank"><img src="https://img.shields.io/badge/install-opencv-blue"></a>
