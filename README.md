@@ -13,7 +13,7 @@
 </p>
 
 ## Phát hiện ổ gà bằng xử lí hình ảnh 
-Mô tả: Sử dụng thuật toán phát hiện đường viền (Edge Detection) và bộ lọc Canny để nhận dạng ổ gà và đưa ra cảnh báo cho tài xế
+> Mô tả: Sử dụng thuật toán phát hiện đường viền (Edge Detection) và bộ lọc Canny để nhận dạng ổ gà và đưa ra cảnh báo cho tài xế
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Yyld0HExgEaToDMddVvvbw.png" alt="Phát hiện ổ gà">
 
@@ -43,32 +43,32 @@ Các đường viền (biên) thường được xác định ở các vùng mà
 
 ### Các phương pháp phát hiện đường viền phổ biến
 
-#### 1. Bộ lọc Canny
+> 1. Bộ lọc Canny
 - Phát hiện biên Canny là một trong những thuật toán phổ biến nhất và mạnh mẽ nhất, với các bước xử lý để làm mịn ảnh, tính gradient, làm mỏng biên, và áp dụng ngưỡng kép.
 - Kết quả của bộ lọc Canny thường rõ ràng, giúp xác định các đường viền chi tiết trong ảnh.
 
-#### 2. Phép tính Gradient (Sobel, Prewitt, Roberts)
+> 2. Phép tính Gradient (Sobel, Prewitt, Roberts)
 - Các toán tử này sử dụng phép tính gradient để xác định các vùng có sự thay đổi lớn về độ sáng, tức là các biên.
 - **Sobel** và **Prewitt** tính toán độ dốc theo hai hướng (ngang và dọc) để xác định các biên trong ảnh.
 - **Roberts** thực hiện tính toán gradient theo hướng chéo.
 
-#### 3. Laplacian và Laplacian of Gaussian (LoG)
+> 3. Laplacian và Laplacian of Gaussian (LoG)
 - Toán tử **Laplacian** xác định các vùng có sự thay đổi cường độ lớn bằng cách tính toán độ biến thiên bậc hai của ảnh.
 - **Laplacian of Gaussian (LoG)** là sự kết hợp của bộ lọc Gaussian để làm mờ nhiễu và toán tử Laplacian để phát hiện biên.
 
-#### 4. Phép toán hình thái học (Morphological operations)
+> 4. Phép toán hình thái học (Morphological operations)
 - Các phép toán hình thái học như giãn nở (dilation), xói mòn (erosion), và đóng/mở (closing/opening) có thể giúp làm nổi bật các đường viền trong ảnh nhị phân hoặc các đối tượng đã được phân đoạn.
 
-#### 5. Hough Transform
+> 5. Hough Transform
 - **Hough Transform** là phương pháp dựa trên lý thuyết bỏ phiếu, thường được dùng để phát hiện các đường thẳng hoặc hình tròn trong ảnh.
 
-#### 6. Phép biến đổi Watershed
+> 6. Phép biến đổi Watershed
 - **Watershed** là một phương pháp phân đoạn dựa trên sự phân tách địa hình, giúp xác định các đối tượng dính liền nhau.
 
 ## III. Bộ lọc Canny
 Bộ lọc Canny đóng vai trò là một phương pháp phát hiện biên để xác định các đường viền của các đối tượng trong ảnh. Canny là một trong các phương pháp phát hiện biên phổ biến và mạnh mẽ, giúp loại bỏ các chi tiết không quan trọng và làm nổi bật các biên rõ ràng
 ### Nguyên lý làm việc của bộ lọc Canny
-#### Làm mờ Gaussian
+> Làm mờ Gaussian
 
 Để giảm nhiễu và chi tiết trong ảnh, một bộ lọc Gaussian được áp dụng. Làm mờ Gaussian làm mịn ảnh bằng cách tích chập ảnh với một bộ lọc Gaussian.
 
@@ -89,11 +89,11 @@ $$
 G(x, y) = \frac{1}{2 \pi \sigma^2} e^{-\frac{x^2 + y^2}{2 \sigma^2}}
 $$
 
-#### Tính toán Gradient
+> Tính toán Gradient
 
 Bước tiếp theo là tính gradient cường độ của ảnh. Điều này có thể thực hiện bằng cách áp dụng các bộ lọc Sobel để xấp xỉ gradient theo hướng \( x \) và \( y \).
 
-##### Công thức:
+> Công thức:
 Với ảnh \( I \), gradient \( G_x \) và \( G_y \) được tính như sau:
 
 $$
@@ -110,15 +110,15 @@ $$
 \theta = \arctan \left( \frac{G_y}{G_x} \right)
 $$
 
-#### Loại bỏ tối đa không phải biên (Non-Maximum Suppression)
+> Loại bỏ tối đa không phải biên (Non-Maximum Suppression)
 
 Để làm mỏng các biên, thuật toán loại bỏ các giá trị gradient không phải là cực đại. Đối với mỗi pixel, nếu giá trị gradient của nó không phải là cực đại theo hướng gradient, giá trị đó sẽ được đặt thành 0.
 
-#### Ngưỡng kép (Double Thresholding)
+> Ngưỡng kép (Double Thresholding)
 
 Sau khi làm mỏng, một ngưỡng kép được áp dụng để xác định các biên tiềm năng. Hai ngưỡng cao và thấp được chọn để phân loại pixel thành mạnh, yếu hoặc không liên quan.
 
-#### Theo dõi biên bằng ngưỡng (Edge Tracking by Hysteresis)
+> Theo dõi biên bằng ngưỡng (Edge Tracking by Hysteresis)
 
 Cuối cùng, theo dõi biên được thực hiện để kết nối các biên yếu với các biên mạnh, giúp đảm bảo các biên liên tục và kết nối tốt.
 
