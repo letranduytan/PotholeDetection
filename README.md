@@ -240,11 +240,10 @@ Install OpenCV sử dụng terminal (hoặc command prompt):
 pip install opencv-python
 ```
 ### Tài liệu tham khảo:
-- CSIR, 2010. *Potholes: Technical guide to their causes, identification and repair*.
-  [Online] Available at: [http://www.csir.co.za/pothole_guides/docs/Pothole_CSIR_tech_guide.pdf](http://www.csir.co.za/pothole_guides/docs/Pothole_CSIR_tech_guide.pdf).
-  [Accessed 15 April 2015].
-
-- OpenCV, 2014. *The OpenCV Reference Manual Release 2.4.9.0*.
-  [Online] Available at: [http://docs.opencv.org/opencv2refman.pdf](http://docs.opencv.org/opencv2refman.pdf).[Accessed 18 July 2014].
+**CSIR, 2010. Potholes: Technical guide to their causes, identification and repair.**
+- *[Online] Available at: [Pothole_CSIR_tech_guide.pdf](http://www.csir.co.za/pothole_guides/docs/Pothole_CSIR_tech_guide.pdf). [Accessed 15 April 2015].*
+  
+**OpenCV, 2014. The OpenCV Reference Manual Release 2.4.9.0.**
+- *[Online] Available at: [Opencv2refman.pdf](http://docs.opencv.org/opencv2refman.pdf). [Accessed 18 July 2014].*
 
 
