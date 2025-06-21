@@ -37,6 +37,7 @@ flowchart TD
     G --> H[Detect Potential Pothole Regions]
     H --> I[Draw Bounding Boxes and Labels]
     I --> J[Display Result]
+```
 
 ## 2. Edge Detection Overview
 
